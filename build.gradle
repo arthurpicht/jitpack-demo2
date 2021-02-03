@@ -16,11 +16,11 @@ dependencies {
 
 // since gradle 6.7
 // see https://docs.gradle.org/6.7/release-notes.html
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(14)
-    }
-}
+// java {
+//     toolchain {
+//        languageVersion = JavaLanguageVersion.of(14)
+//    }
+//}
 
 test {
     useJUnitPlatform()
