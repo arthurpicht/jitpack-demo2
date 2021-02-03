@@ -1,3 +1,8 @@
 before_install:
-    -  ./create_gradle_wrapper.sh
+    - gradle wrapper
+    - ./gradlew wrapper --gradle-version 6.7.1
+    - ./gradlew --version
+
+
+
     
