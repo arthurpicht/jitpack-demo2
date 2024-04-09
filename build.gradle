@@ -2,24 +2,16 @@ plugins {
     id 'java'
 }
 
-group 'com.github.arthurpicht'
-version '1.0.0'
+group = 'com.github.arthurpicht'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
-
-// since gradle 6.7
-// see https://docs.gradle.org/6.7/release-notes.html
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(14)
-    }
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
 }
 
 test {
